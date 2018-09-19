@@ -73,7 +73,8 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <SDLCheck>true</SDLCheck>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -110,6 +111,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="DrawHeart.h" />
+    <ClInclude Include="haderfile.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Sign.h" />
+    <ClInclude Include="StandardGradeScanPrint.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Project6.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DrawHeart.c" />
+    <ClCompile Include="Sign.c" />
+    <ClCompile Include="StandardGradeScanPrint.c" />
+    <ClCompile Include="Main.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
